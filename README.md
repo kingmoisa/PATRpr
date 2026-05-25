@@ -1,4 +1,5 @@
 🚀 Funcționalități Principale
+
 Modul AUTO: Reglarea unghiului servomotorului proporțional cu temperatura citită de senzorul digital DS18B20 (interpolare liniară între 20°C și 30°C).
 
 Modul MANUAL: Controlul direct al servomotorului pe baza valorii analogice citite de la un potențiometru.
@@ -8,6 +9,7 @@ Interfață HMI (Serială & LCD): Monitorizare locală pe un afișaj alfanumeric
 Managementul Stării (Event-Driven): Funcție de ON/OFF a sistemului comandată dintr-un buton fizic, implementată eficient pentru a elimina buclele de polling.
 
 🧠 Concepte FreeRTOS Implementate
+
 Sistemul este împărțit în 5 task-uri paralele (Temperatură, Tensiune, Servo, Serial, System State), coordonate prin mecanisme avansate specifice sistemelor de operare în timp real:
 
 Cozi de Mesaje (Queues): Transmiterea asincronă, atomizată și sigură a variabilelor float de la senzorii de citire către actuator.
